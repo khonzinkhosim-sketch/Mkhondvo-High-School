@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MKHONDVO HIGH SCHOOL - Memories & Achievements Archive</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:url('webb/images/group_photo.jpg') center/cover;
+    height:250px;
+    color:white;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-blend-mode:darken;
+    background-color:rgba(0,0,0,0.5);
+}
+
+header h1{
+    font-size:3em;
+    text-shadow:2px 2px 5px black;
+}
+
+header p{
+    font-size:1.2em;
+}
+
+nav{
+    background:#003366;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.search-box{
+    width:100%;
+    padding:10px;
+    border:2px solid #003366;
+    border-radius:5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table, th, td{
+    border:2px solid black;
+}
+
+th{
+    background:#003366;
+    color:white;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input, textarea{
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:10px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0055aa;
+}
+
+.login-box{
+    max-width:400px;
+    margin:auto;
+}
+
+footer{
+    background:url(/images/student_photo.url('webb/images/student_photo.jpg')') center/cover;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:20px;
+    background-blend-mode:darken;
+    background-color:rgba(0,0,0,0.7);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>MKHONDVO HIGH SCHOOL</h1>
+    <p>Memories, Achievements & School Archive</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#students">Students</a>
+    <a href="#teachers">Teachers</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#login">Login</a>
+</nav>
+
+<div class="container">
+
+<section>
+    <input type="text" id="searchInput" class="search-box"
+           placeholder="Search memories..." onkeyup="searchContent()">
+</section>
+
+<section id="about">
+    <h2>About Our School</h2>
+    <p>
+        Welcome to MKHONDVO HIGH SCHOOL. This website preserves memories
+        of students and teachers while showcasing academic, sporting,
+        cultural and leadership achievements.
+    </p>
+</section>
+
+<section id="students">
+    <h2>Students Memories</h2>
+
+    <table>
+        <tr>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Memory</th>
+        </tr>
+
+        <tr>
+            <td><img src="images/school_emblem.jpg" width="120"></td>
+            <td>Student Name</td>
+            <td>2025</td>
+            <td>Participated in school leadership.</td>
+        </tr>
+
+        <tr>
+            <td><img src="images/student2.jpg" width="120"></td>
+            <td>Student Name</td>
+            <td>2025</td>
+            <td>Won academic excellence award.</td>
+        </tr>
+    </table>
+</section>
+
+<section id="teachers">
+    <h2>Teachers Memories</h2>
+
+    <table>
+        <tr>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Contribution</th>
+        </tr>
+
+        <tr>
+            <td><img src="images/teacher1.jpg" width="120"></td>
+            <td>Teacher Name</td>
+            <td>Mathematics</td>
+            <td>Improved academic performance.</td>
+        </tr>
+
+        <tr>
+            <td><img src="images/teacher2.jpg" width="120"></td>
+            <td>Teacher Name</td>
+            <td>Science</td>
+            <td>Led science competitions.</td>
+        </tr>
+    </table>
+</section>
+
+<section id="achievements">
+    <h2>School Achievements</h2>
+
+    <ul>
+        <li>Excellent examination results.</li>
+        <li>Regional sports championships.</li>
+        <li>Debate and cultural competition awards.</li>
+        <li>Leadership and community service recognition.</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>School Gallery</h2>
+
+    <div class="gallery">
+        <img src="images/s.jpg" alt="">
+        <img src="images/student2.jpg" alt="">
+        <img src="images/teacher1.jpg" alt="">
+        <img src="images/teacher2.jpg" alt="">
+        <img src="images/achievement.jpg" alt="">
+        <img src="images/emblem.png" alt="">
+    </div>
+</section>
+
+<section>
+    <h2>Submit a Memory</h2>
+
+    <form onsubmit="submitMemory(event)">
+        <input type="text" placeholder="Your Name" required>
+        <textarea placeholder="Share your memory..." required></textarea>
+        <button type="submit">Submit Memory</button>
+    </form>
+
+    <div id="memoryMessage"></div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<section id="login">
+    <h2>Administrator Login</h2>
+
+    <div class="login-box">
+        <form onsubmit="login(event)">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="loginResult"></p>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <h3>MKHONDVO HIGH SCHOOL</h3>
+    <p>Preserving Memories, Celebrating Achievements</p>
+    <p>&copy; 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+function searchContent() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let sections = document.querySelectorAll("section");
+
+    sections.forEach(section => {
+        let text = section.innerText.toLowerCase();
+
+        if(text.includes(input)){
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    });
+}
+
+function submitMemory(event){
+    event.preventDefault();
+
+    document.getElementById("memoryMessage").innerHTML =
+    "<br><strong>Memory submitted successfully!</strong>";
+}
+
+function login(event){
+    event.preventDefault();
+
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if(username === "admin" && password === "1234"){
+        document.getElementById("loginResult").innerHTML =
+        "Login successful.";
+    } else {
+        document.getElementById("loginResult").innerHTML =
+        "Invalid username or password.";
+    }
+}
+</script>
+
+</body>
+</html>

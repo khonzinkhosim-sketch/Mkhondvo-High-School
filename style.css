@@ -1,0 +1,9 @@
+
+body{font-family:Arial,sans-serif;margin:0;background:#f4f8fc}
+header{text-align:center;background:#003366;color:white;padding:20px}
+.logo{width:150px}
+nav{background:#00509e;padding:10px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 15px}
+section{padding:20px}
+.photo{max-width:100%;display:block;margin:10px auto;border-radius:10px}
+footer{text-align:center;background:#003366;color:white;padding:15px}
